@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Buybuybuy/Buybuybuy/apps" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Buybuybuy/Buybuybuy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Buybuybuy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Buybuybuy/celery_tasks" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Buybuybuy/Buybuybuy/apps/verifications" isTestSource="false" />
+    </content>
     <orderEntry type="jdk" jdkName="Python 3.6 (django_py3)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

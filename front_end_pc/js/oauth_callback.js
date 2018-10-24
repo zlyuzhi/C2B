@@ -21,7 +21,7 @@ var vm = new Vue({
     mounted: function () {
         // 从路径中获取qq重定向返回的code
         var code = this.get_query_string('code');
-        axios.get(this.host + '/oauth/qq/user/?code=' + code, {
+        axios.get(this.host + '/oauth/qq/users/?code=' + code, {
             responseType: 'json',
             withCredentials: true
         }).then(response => {
@@ -152,7 +152,7 @@ var vm = new Vue({
             if (this.error_password == false &&
                 this.error_phone == false &&
                 this.error_sms_code == false) {
-                axios.post(this.host + '/oauth/qq/user/', {
+                axios.post(this.host + '/oauth/qq/users/', {
                     password: this.password,
                     mobile: this.mobile,
                     sms_code: this.sms_code,

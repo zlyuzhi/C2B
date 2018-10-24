@@ -17,7 +17,7 @@ var vm = new Vue({
     mounted: function () {
         // 判断用户的登录状态
         if (this.user_id && this.token) {
-            axios.get(this.host + '/user/', {
+            axios.get(this.host + '/users/', {
                 // 向后端传递JWT token的方法
                 headers: {
                     'Authorization': 'JWT ' + this.token

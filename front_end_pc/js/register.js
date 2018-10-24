@@ -97,6 +97,7 @@ var vm = new Vue({
         check_allow: function () {
             if (!this.allow) {
                 this.error_allow = true;
+
             } else {
                 this.error_allow = false;
             }
@@ -176,7 +177,7 @@ var vm = new Vue({
                 return;
             }
 
-            axios.get('http://127.0.0.1:8000/sms_code/' + this.mobile + '/')
+            axios.get(this.host+'/sms_code/' + this.mobile + '/')
                 .then(response => {
                     var num = 60;
                     var t = setInterval(function () {
